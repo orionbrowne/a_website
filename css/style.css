@@ -24,7 +24,7 @@ ul.first{
 ul.second{
     list-style-type:none;
     text-align:center;
-    margin-top: 10px;
+    margin-top: 10px; 
     z-index:1;
 }
 
@@ -53,8 +53,27 @@ ul li :hover::after{
 
 .logo img{
     float:left;
-    width: 150px;
-    height:auto;
-    position:absolute;
-    z-index:0;
+    width: 120px;
+    height: auto;
+    position: absolute;
+    opacity: 65%;
+    z-index:0; 
+}
+h1 {
+    color:rgb(168, 172, 190);
+    font-size: 40px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+p1 {
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
