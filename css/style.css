@@ -86,3 +86,24 @@ p1 {
     left: 50%;
     transform: translate(-50%,-50%);
 }
+.active {
+  float:none;
+  position:fixed;
+  bottom: 0;
+}
+
+
+.static {
+  float:none;
+  position:absolute;
+  bottom: 0;
+
+}
+
+
+.static:hover {
+  float:none;
+  position:absolute;
+  bottom: 0;
+  opacity:0;
+}
