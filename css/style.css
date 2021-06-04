@@ -15,11 +15,17 @@ header{
     
 }
 
-ul{
-    float: right;
+ul.first{
     list-style-type: none;
-    margin-top: 25px;
-    margin-right: 25px;
+    text-align: center;
+    margin-top: 20%;
+    margin-bottom: auto;
+}
+ul.second{
+    list-style-type:none;
+    text-align:center;
+    margin-top: 10px;
+    z-index:1;
 }
 
 ul li{
@@ -29,15 +35,26 @@ ul li{
 ul li a{
     text-decoration: none ;
     color: white;
+    font-size: 50px;
+}
+ul li ::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336 ;
+    display: block;
+    margin: auto;
     transition: 0.6s ease;  
 }
 
-ul li :hover{
-    background-color: black;
-    color: white;
+ul li :hover::after{
+    width: 100%;
 }
+
 .logo img{
     float:left;
     width: 150px;
     height:auto;
+    position:absolute;
+    z-index:0;
 }
